@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "graphql": "^15.3.0",
+    "graphql-upload": "^11.0.0",
     "ioredis": "^4.17.3",
     "nodemailer": "^6.4.11",
     "pg": "^8.3.0",
@@ -38,5 +39,9 @@
   },
   "scripts": {
     "start": "ts-node-dev --respawn src/index.ts"
+  },
+  "resolutions": {
+    "apollo-server-koa/apollo-server-core/fs-capacitor": "^6.2.0",
+    "apollo-server-koa/apollo-server-core/graphql-upload": "^11.0.0"
   }
 }
